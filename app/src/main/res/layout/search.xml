@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="335dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView79"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/icon2" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="247dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Поиск"
+                android:textAlignment="center"
+                android:textColor="#2B2B2B"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="335dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/search_background"
+            android:iconifiedByDefault="false"
+            android:queryHint="Nike Air Max"
+            android:visibility="visible"
+            android:voiceIcon="@android:drawable/ic_btn_speak_now">
+
+
+        </SearchView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/item1"
+                        android:layout_width="160dp"
+                        android:layout_height="182dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/rounded_background">
+
+                        <ImageView
+                            android:id="@+id/imageView22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            app:srcCompat="@drawable/heart" />
+
+                        <ImageView
+                            android:id="@+id/imageView23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            app:srcCompat="@drawable/nike2" />
+
+                        <ImageView
+                            android:id="@+id/imageView24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="100dp"
+                            app:srcCompat="@drawable/nikeair" />
+
+                        <ImageView
+                            android:id="@+id/imageView25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"
+                            app:srcCompat="@drawable/cena" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imageView26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            app:shapeAppearanceOverlay="@style/BottomRightCornerRounded"
+                            app:srcCompat="@drawable/plus" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/item2"
+                        android:layout_width="160dp"
+                        android:layout_height="182dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/rounded_background">
+
+                        <ImageView
+                            android:id="@+id/imageView27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            app:srcCompat="@drawable/heart" />
+
+                        <ImageView
+                            android:id="@+id/imageView28"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            app:srcCompat="@drawable/nike2" />
+
+                        <ImageView
+                            android:id="@+id/imageView29"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="100dp"
+                            app:srcCompat="@drawable/nikeair" />
+
+                        <ImageView
+                            android:id="@+id/imageView30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"
+                            app:srcCompat="@drawable/cena" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imageView31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            app:shapeAppearanceOverlay="@style/BottomRightCornerRounded"
+                            app:srcCompat="@drawable/plus" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/item3"
+                        android:layout_width="160dp"
+                        android:layout_height="182dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/rounded_background">
+
+                        <ImageView
+                            android:id="@+id/imageView32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            app:srcCompat="@drawable/heart" />
+
+                        <ImageView
+                            android:id="@+id/imageView33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            app:srcCompat="@drawable/nike2" />
+
+                        <ImageView
+                            android:id="@+id/imageView34"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="100dp"
+                            app:srcCompat="@drawable/nikeair" />
+
+                        <ImageView
+                            android:id="@+id/imageView35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"
+                            app:srcCompat="@drawable/cena" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imageView36"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            app:shapeAppearanceOverlay="@style/BottomRightCornerRounded"
+                            app:srcCompat="@drawable/plus" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/item4"
+                        android:layout_width="160dp"
+                        android:layout_height="182dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/rounded_background">
+
+                        <ImageView
+                            android:id="@+id/imageView37"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            app:srcCompat="@drawable/heart" />
+
+                        <ImageView
+                            android:id="@+id/imageView38"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            app:srcCompat="@drawable/nike2" />
+
+                        <ImageView
+                            android:id="@+id/imageView39"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="100dp"
+                            app:srcCompat="@drawable/nikeair" />
+
+                        <ImageView
+                            android:id="@+id/imageView40"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"
+                            app:srcCompat="@drawable/cena" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imageView41"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            app:shapeAppearanceOverlay="@style/BottomRightCornerRounded"
+                            app:srcCompat="@drawable/plus" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/item5"
+                        android:layout_width="160dp"
+                        android:layout_height="182dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/rounded_background">
+
+                        <ImageView
+                            android:id="@+id/imageView42"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            app:srcCompat="@drawable/heart" />
+
+                        <ImageView
+                            android:id="@+id/imageView43"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            app:srcCompat="@drawable/nike2" />
+
+                        <ImageView
+                            android:id="@+id/imageView44"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="100dp"
+                            app:srcCompat="@drawable/nikeair" />
+
+                        <ImageView
+                            android:id="@+id/imageView45"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"
+                            app:srcCompat="@drawable/cena" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imageView46"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            app:shapeAppearanceOverlay="@style/BottomRightCornerRounded"
+                            app:srcCompat="@drawable/plus" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/item6"
+                        android:layout_width="160dp"
+                        android:layout_height="182dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/rounded_background">
+
+                        <ImageView
+                            android:id="@+id/imageView47"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            app:srcCompat="@drawable/heart" />
+
+                        <ImageView
+                            android:id="@+id/imageView48"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            app:srcCompat="@drawable/nike2" />
+
+                        <ImageView
+                            android:id="@+id/imageView49"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="100dp"
+                            app:srcCompat="@drawable/nikeair" />
+
+                        <ImageView
+                            android:id="@+id/imageView50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"
+                            app:srcCompat="@drawable/cena" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imageView51"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            app:shapeAppearanceOverlay="@style/BottomRightCornerRounded"
+                            app:srcCompat="@drawable/plus" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/item7"
+                        android:layout_width="160dp"
+                        android:layout_height="182dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/rounded_background">
+
+                        <ImageView
+                            android:id="@+id/imageView52"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            app:srcCompat="@drawable/heart" />
+
+                        <ImageView
+                            android:id="@+id/imageView53"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            app:srcCompat="@drawable/nike2" />
+
+                        <ImageView
+                            android:id="@+id/imageView54"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="100dp"
+                            app:srcCompat="@drawable/nikeair" />
+
+                        <ImageView
+                            android:id="@+id/imageView55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"
+                            app:srcCompat="@drawable/cena" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imageView56"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            app:shapeAppearanceOverlay="@style/BottomRightCornerRounded"
+                            app:srcCompat="@drawable/plus" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/item8"
+                        android:layout_width="160dp"
+                        android:layout_height="182dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/rounded_background">
+
+                        <ImageView
+                            android:id="@+id/imageView57"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            app:srcCompat="@drawable/heart" />
+
+                        <ImageView
+                            android:id="@+id/imageView58"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            app:srcCompat="@drawable/nike2" />
+
+                        <ImageView
+                            android:id="@+id/imageView59"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="100dp"
+                            app:srcCompat="@drawable/nikeair" />
+
+                        <ImageView
+                            android:id="@+id/imageView60"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"
+                            app:srcCompat="@drawable/cena" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imageView61"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            app:shapeAppearanceOverlay="@style/BottomRightCornerRounded"
+                            app:srcCompat="@drawable/plus" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/item9"
+                        android:layout_width="160dp"
+                        android:layout_height="182dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/rounded_background">
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            app:srcCompat="@drawable/heart" />
+
+                        <ImageView
+                            android:id="@+id/imageView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            app:srcCompat="@drawable/nike2" />
+
+                        <ImageView
+                            android:id="@+id/imageView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="100dp"
+                            app:srcCompat="@drawable/nikeair" />
+
+                        <ImageView
+                            android:id="@+id/imageView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"
+                            app:srcCompat="@drawable/cena" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imageView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            app:shapeAppearanceOverlay="@style/BottomRightCornerRounded"
+                            app:srcCompat="@drawable/plus" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/item10"
+                        android:layout_width="160dp"
+                        android:layout_height="182dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/rounded_background">
+
+                        <ImageView
+                            android:id="@+id/imageView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            app:srcCompat="@drawable/heart" />
+
+                        <ImageView
+                            android:id="@+id/imageView18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            app:srcCompat="@drawable/nike2" />
+
+                        <ImageView
+                            android:id="@+id/imageView19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="100dp"
+                            app:srcCompat="@drawable/nikeair" />
+
+                        <ImageView
+                            android:id="@+id/imageView20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"
+                            app:srcCompat="@drawable/cena" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imageView21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            app:shapeAppearanceOverlay="@style/BottomRightCornerRounded"
+                            app:srcCompat="@drawable/plus" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

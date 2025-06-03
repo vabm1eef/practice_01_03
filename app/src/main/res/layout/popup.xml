@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="375dp"
+    android:layout_height="196dp"
+    android:layout_margin="16dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp">
+
+    <!-- Ваш контент внутри CardView -->
+
+    <ImageView
+        android:id="@+id/imageView84"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/ellipse674" />
+
+    <ImageView
+        android:id="@+id/imageView85"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        app:srcCompat="@drawable/email1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="199dp"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="Проверьте Ваш Email"
+            android:textColor="#2B2B2B"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Мы отправили код восстановления пароля на вашу электронную почту."
+            android:textAlignment="center"
+            android:textColor="#707B81"
+            android:textSize="16sp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
