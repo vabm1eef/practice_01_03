@@ -1,6 +1,7 @@
 package com.example.praktika;
 
 import android.app.Activity;
+import android.content.res.Configuration;
 import android.view.View;
 import android.widget.SearchView;
 
@@ -9,7 +10,14 @@ public class HomeController {
 
     public HomeController(Activity context) {
         this.context = context;
-        context.setContentView(R.layout.home);
+
+        // Check screen orientation
+        int orientation = context.getResources().getConfiguration().orientation;
+        if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            context.setContentView(R.layout.home_horizontal);
+        } else {
+            context.setContentView(R.layout.home);
+        }
     }
 
     public void setup() {
