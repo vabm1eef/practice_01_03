@@ -1,6 +1,7 @@
 package com.example.praktika;
 
 import android.app.Activity;
+import android.content.res.Configuration;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
@@ -11,7 +12,13 @@ public class RegisterController {
 
     public RegisterController(Activity context) {
         this.context = context;
-        context.setContentView(R.layout.register);
+        // Проверяем ориентацию и выбираем соответствующий layout
+        int orientation = context.getResources().getConfiguration().orientation;
+        if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            context.setContentView(R.layout.register_horizontal);
+        } else {
+            context.setContentView(R.layout.register);
+        }
     }
 
     public void setup() {
