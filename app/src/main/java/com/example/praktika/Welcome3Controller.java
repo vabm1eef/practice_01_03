@@ -4,23 +4,23 @@ import android.app.Activity;
 import android.content.res.Configuration;
 import android.widget.Button;
 
-public class Welcome1Controller {
+public class Welcome3Controller {
     private final Activity context;
 
-    public Welcome1Controller(Activity context) {
+    public Welcome3Controller(Activity context) {
         this.context = context;
 
-        // Проверяем ориентацию экрана
+        // Check screen orientation
         int orientation = context.getResources().getConfiguration().orientation;
         if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            context.setContentView(R.layout.welcome1_horizontal);
+            context.setContentView(R.layout.welcome3_horizontal);
         } else {
-            context.setContentView(R.layout.welcome1);
+            context.setContentView(R.layout.welcome3);
         }
     }
 
     public void setup() {
-        Button button2 = context.findViewById(R.id.button2);
-        button2.setOnClickListener(btn2 -> new Welcome2Controller(context).setup());
+        Button button4 = context.findViewById(R.id.button4);
+        button4.setOnClickListener(btn4_2 -> new HomeController(context).setup());
     }
 }

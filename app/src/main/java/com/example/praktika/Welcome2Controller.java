@@ -1,6 +1,7 @@
 package com.example.praktika;
 
 import android.app.Activity;
+import android.content.res.Configuration;
 import android.widget.Button;
 
 public class Welcome2Controller {
@@ -8,11 +9,18 @@ public class Welcome2Controller {
 
     public Welcome2Controller(Activity context) {
         this.context = context;
-        context.setContentView(R.layout.welcome2);
+
+        // Проверяем ориентацию экрана
+        int orientation = context.getResources().getConfiguration().orientation;
+        if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            context.setContentView(R.layout.welcome2_horizontal);
+        } else {
+            context.setContentView(R.layout.welcome2);
+        }
     }
 
     public void setup() {
-        Button button4Welcome2 = context.findViewById(R.id.button4);
-        button4Welcome2.setOnClickListener(btn4_2 -> new HomeController(context).setup());
+        Button button4 = context.findViewById(R.id.button4);
+        button4.setOnClickListener(btn4 -> new Welcome3Controller(context).setup());
     }
 }

@@ -14,7 +14,7 @@ public class LogoController {
     public void showLogoAndWelcome() {
         context.setContentView(R.layout.logo);
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
-            new WelcomeController(context).setup();
+            new Welcome1Controller(context).setup();
         }, 2000);
     }
 }
