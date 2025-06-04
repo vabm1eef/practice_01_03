@@ -1,6 +1,7 @@
 package com.example.praktika;
 
 import android.app.Activity;
+import android.content.res.Configuration;
 import android.widget.ImageView;
 
 public class SearchController {
@@ -8,11 +9,22 @@ public class SearchController {
 
     public SearchController(Activity context) {
         this.context = context;
-        context.setContentView(R.layout.search);
+
+        // Проверяем ориентацию устройства
+        int orientation = context.getResources().getConfiguration().orientation;
+        if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            // Горизонтальная ориентация
+            context.setContentView(R.layout.search_horizontal);
+        } else {
+            // Вертикальная ориентация
+            context.setContentView(R.layout.search);
+        }
     }
 
     public void setup() {
         ImageView backToHome = context.findViewById(R.id.imageView79);
-        backToHome.setOnClickListener(v -> new HomeController(context).setup());
+        if (backToHome != null) {
+            backToHome.setOnClickListener(v -> new HomeController(context).setup());
+        }
     }
 }

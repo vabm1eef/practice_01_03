@@ -1,6 +1,7 @@
 package com.example.praktika;
 
 import android.app.Activity;
+import android.content.res.Configuration;
 import android.widget.ImageView;
 import android.widget.SearchView;
 
@@ -9,7 +10,16 @@ public class Search2Controller {
 
     public Search2Controller(Activity context) {
         this.context = context;
-        context.setContentView(R.layout.search2);
+
+        // Проверяем ориентацию устройства
+        int orientation = context.getResources().getConfiguration().orientation;
+        if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            // Горизонтальная ориентация
+            context.setContentView(R.layout.search2_horizontal);
+        } else {
+            // Вертикальная ориентация
+            context.setContentView(R.layout.search2);
+        }
     }
 
     public void setup() {

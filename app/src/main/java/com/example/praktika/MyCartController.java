@@ -1,6 +1,7 @@
 package com.example.praktika;
 
 import android.app.Activity;
+import android.content.res.Configuration;
 import android.widget.ImageView;
 
 public class MyCartController {
@@ -8,7 +9,16 @@ public class MyCartController {
 
     public MyCartController(Activity context) {
         this.context = context;
-        context.setContentView(R.layout.mycart);
+
+        // Проверяем ориентацию устройства
+        int orientation = context.getResources().getConfiguration().orientation;
+        if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            // Горизонтальная ориентация
+            context.setContentView(R.layout.mycart_horizontal);
+        } else {
+            // Вертикальная ориентация
+            context.setContentView(R.layout.mycart);
+        }
     }
 
     public void setup() {
