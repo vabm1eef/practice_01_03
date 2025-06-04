@@ -1,6 +1,7 @@
 package com.example.praktika;
 
 import android.app.Activity;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.view.Gravity;
@@ -17,7 +18,13 @@ public class ForgotPasswordController {
 
     public ForgotPasswordController(Activity context) {
         this.context = context;
-        context.setContentView(R.layout.forgotpassword);
+        // Проверяем ориентацию и выбираем соответствующий layout
+        int orientation = context.getResources().getConfiguration().orientation;
+        if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            context.setContentView(R.layout.forgotpassword_horizontal);
+        } else {
+            context.setContentView(R.layout.forgotpassword);
+        }
     }
 
     public void setup() {
