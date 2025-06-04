@@ -1,6 +1,7 @@
 package com.example.praktika;
 
 import android.app.Activity;
+import android.content.res.Configuration;
 import android.widget.ImageView;
 
 public class Details1Controller {
@@ -8,7 +9,14 @@ public class Details1Controller {
 
     public Details1Controller(Activity context) {
         this.context = context;
-        context.setContentView(R.layout.details1);
+
+        // Проверяем ориентацию устройства
+        int orientation = context.getResources().getConfiguration().orientation;
+        if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            context.setContentView(R.layout.details1_horizontal);
+        } else {
+            context.setContentView(R.layout.details1);
+        }
     }
 
     public void setup() {
